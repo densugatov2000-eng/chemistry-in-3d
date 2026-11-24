@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090e19">
+  <title>Химия в 3D · Интерактивные модели и тренажёры</title>
+  <meta name="description" content="Бесплатные интерактивные модели и тренажёры Дениса Сугатова для изучения школьной химии и подготовки к ОГЭ и ЕГЭ.">
+  <link rel="canonical" href="https://densugatov2000-eng.github.io/chemistry-in-3d/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Химия в 3D · Интерактивные модели и тренажёры">
+  <meta property="og:description" content="Исследуйте химические явления и закрепляйте знания на практике. Бесплатные материалы для подготовки к ОГЭ и ЕГЭ.">
+  <meta property="og:image" content="https://densugatov2000-eng.github.io/chemistry-in-3d/assets/branding/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Химия в 3D. Оболочечная модель кислорода-16.">
+  <meta property="og:url" content="https://densugatov2000-eng.github.io/chemistry-in-3d/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./catalog.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#trainers">К каталогу</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./">
+        <img src="./assets/branding/logo.svg" width="40" height="40" alt="">
+        <span><strong>Химия в 3D</strong><small>Денис Сугатов</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Главная навигация">
+        <a href="#trainers">Тренажёры</a>
+        <a href="#about">О проекте</a>
+        <a href="#social" data-social-nav hidden>Социальные сети</a>
+      </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Меню"><span aria-hidden="true">☰</span></summary>
+        <nav aria-label="Мобильная навигация">
+          <a href="#trainers">Тренажёры</a>
+          <a href="#about">О проекте</a>
+          <a href="#social" data-social-nav hidden>Социальные сети</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="main-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Интерактивные модели и тренажёры по химии</p>
+        <h1 id="main-title">Химия в 3D</h1>
+        <p class="slogan">Исследуйте. Понимайте. Закрепляйте.</p>
+        <p class="hero-description">Интерактивные модели и тренажёры для изучения школьной химии и подготовки к ОГЭ и ЕГЭ.</p>
+        <a class="button primary" href="#trainers">Выбрать тренажёр <span aria-hidden="true">↓</span></a>
+      </div>
+      <!-- atomic-preview:start --><figure class="hero-figure">
+        <img src="./simulator/atomic-structure/preview.webp" width="960" height="540" fetchpriority="high" alt="Кислород-16. Ядро и восемь электронов на двух уровнях, 2 и 6.">
+        <figcaption>Кислород-16 · оболочечная модель</figcaption>
+      </figure><!-- atomic-preview:end -->
+    </section>
+    <section class="catalog" id="trainers" aria-labelledby="trainers-title">
+      <div class="section-heading">
+        <h2 id="trainers-title">Каталог тренажёров</h2>
+        <p id="catalog-count"></p>
+      </div>
+      <div class="catalog-controls" id="catalog-controls" hidden>
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg>
+          <span class="visually-hidden">Поиск тренажёров</span>
+          <input id="catalog-search" type="search" placeholder="Поиск по теме или названию" autocomplete="off">
+        </label>
+        <div class="filters" id="catalog-filters" role="group" aria-label="Фильтр по экзамену">
+          <button class="button" type="button" data-exam="" aria-pressed="true">Все</button>
+          <button class="button" type="button" data-exam="ОГЭ" aria-pressed="false">ОГЭ</button>
+          <button class="button" type="button" data-exam="ЕГЭ" aria-pressed="false">ЕГЭ</button>
+        </div>
+        <button id="catalog-reset" class="button" type="button" hidden>Сбросить</button>
+      </div>
+      <p id="catalog-status" class="catalog-status" role="status" aria-atomic="true">Загружаем тренажёры…</p>
+      <div id="catalog-cards" class="cards"></div>
+      <button id="catalog-retry" class="button" type="button" hidden>Повторить загрузку</button>
+      <noscript><p>Для поиска и фильтрации включите JavaScript.</p><!-- atomic-link:start --><a class="button primary" href="./simulator/atomic-structure/">Открыть тренажёр «Строение атома»</a><!-- atomic-link:end --></noscript>
+    </section>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">О проекте</h2>
+      <div>
+        <p>«Химия в 3D» — мой образовательный проект, в котором я объединяю наглядные модели, анимации и интерактивные задания, чтобы изучение химии становилось понятнее и интереснее.</p>
+        <p>Здесь можно самостоятельно исследовать химические явления, разбираться в закономерностях и закреплять полученные знания на практике.</p>
+        <p>Материалы ориентированы на школьную программу и подготовку к ОГЭ и ЕГЭ. Все тренажёры доступны бесплатно и не требуют регистрации.</p>
+        <p><strong>Денис Сугатов — репетитор по химии.</strong></p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Денис Сугатов | Химия через увлекательные примеры</p>
+      <nav id="social" aria-label="Социальные сети" hidden></nav>
+    </div>
+  </footer>
+</body>
+</html>

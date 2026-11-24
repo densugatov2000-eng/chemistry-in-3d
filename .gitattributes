@@ -1,0 +1,2 @@
+# Preserve the embedded trainer script's byte-for-byte SHA-256 across checkouts.
+simulator/atomic-structure/index.html text eol=lf
